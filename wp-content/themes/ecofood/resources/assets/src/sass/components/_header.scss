@@ -1,0 +1,16 @@
+.header-wrapper {
+	.header-inner {
+		display: flex;
+		align-items: center;
+	}
+	span {
+		font-family: "RobotoBold";
+		font-size: 16px;
+		text-transform: uppercase;
+		color: $green;
+	}
+	img {
+		max-height: 102px;
+		width: auto;
+	}
+}

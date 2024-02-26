@@ -1,0 +1,122 @@
+.main-content-inner {
+	background-image: url("#{$imagePath}/body-background.webp");
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.main-content-title {
+		display: flex;
+		width: 70%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		border-top: solid 2px $black;
+		border-bottom: solid 2px $black;
+
+		h2 {
+			color: $green;
+			font-family: "RobotoBold";
+			margin-bottom: 20px;
+		}
+		ul {
+			width: 100%;
+			text-align: center;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				font-family: "RobotoBold";
+				font-size: 16px;
+
+				&::after {
+					content: "|";
+					margin-right: 15px;
+					margin-left: 15px;
+				}
+
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
+
+				a {
+					color: $black;
+					text-decoration: none;
+
+					&:hover {
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+
+	h1 {
+		font-family: "RobotoBold";
+		font-size: 48px;
+		color: $green;
+		text-transform: uppercase;
+	}
+	.article-wrapper {
+		display: flex;
+
+		.article-list {
+			width: 70%;
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 10%;
+
+			article {
+				width: 40%;
+				position: relative;
+				margin-bottom: 40px;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+
+				header {
+					color: $grey;
+					a {
+						color: $green;
+						text-decoration: none;
+					}
+					h2 {
+						font-family: "RobotoBold";
+						font-size: 20px;
+					}
+					.posted-on {
+						text-transform: uppercase;
+						color: $black;
+						position: absolute;
+						top: 50px;
+						margin-left: -80px;
+						rotate: 90px;
+						transform: rotate(90deg);
+						-webkit-transform: rotate(90deg);
+						-moz-transform: rotate(90deg);
+						-ms-transform: rotate(90deg);
+						-o-transform: rotate(90deg);
+					}
+				}
+
+				.description {
+					margin-top: 10px;
+					p {
+						color: $grey;
+					}
+				}
+			}
+		}
+		sidebar {
+			.wrapper {
+				width: 30%;
+			}
+		}
+	}
+}

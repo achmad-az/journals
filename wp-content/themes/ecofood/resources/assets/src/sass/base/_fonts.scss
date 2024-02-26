@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Mont";
+	src: url("#{$fontPath}/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("#{$fontPath}/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoBold";
+	src: url("#{$fontPath}/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "RobotoItalic";
+	src: url("#{$fontPath}/Roboto-Italic.ttf") format("truetype");
+}

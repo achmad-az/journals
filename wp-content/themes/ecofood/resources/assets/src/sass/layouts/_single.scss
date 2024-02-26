@@ -1,0 +1,38 @@
+#main-content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-image: url(#{$imagePath}/body-background.webp);
+	h1 {
+		font-family: "Mont";
+		font-size: 48px;
+		color: $green;
+		text-transform: uppercase;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 40px;
+	}
+
+	.posted-on {
+		color: grey;
+		margin-bottom: 40px;
+	}
+
+	.single-wrapper {
+		display: flex;
+
+		.single-main-content {
+			width: 70%;
+		}
+
+		.single-sidebar {
+			width: 30%;
+		}
+	}
+}
+
+.single-sidebar {
+	border-left: solid 2px $grey;
+}

@@ -1,0 +1,47 @@
+sidebar {
+	width: 30%;
+	#trending_posts_widget-3 {
+		padding-left: 60px;
+		border-left: solid 2px $grey;
+	}
+	h2 {
+		font-family: "Mont";
+		font-size: 72px;
+		color: $green;
+		text-transform: uppercase;
+		line-height: 1.25;
+		border-bottom: solid 2px $grey;
+		margin-bottom: 30px;
+		padding-bottom: 15px;
+	}
+	ol {
+		&.trending {
+			counter-reset: item;
+			list-style-type: none;
+
+			li {
+				display: flex;
+				justify-content: center;
+				justify-items: center;
+				align-items: center;
+				padding-bottom: 40px;
+				border-bottom: solid 2px $grey;
+				margin-bottom: 30px;
+				&:before {
+					content: counter(item, decimal-leading-zero) " ";
+					counter-increment: item;
+					font-family: "Mont";
+					font-size: 48px;
+					width: 180px;
+				}
+
+				a {
+					color: $grey;
+				}
+			}
+		}
+	}
+	#block-2 {
+		padding-left: 60px;
+	}
+}
